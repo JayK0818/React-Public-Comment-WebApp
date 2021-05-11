@@ -1,8 +1,12 @@
 import React from 'react';
+import HelloWorld from '@/components/HelloWorld';
 
 function App(){
   return (
-    <div>hello world</div>
+    <div>
+      <HelloWorld/>
+      <p>hello world</p>
+    </div>
   )
 }
 
