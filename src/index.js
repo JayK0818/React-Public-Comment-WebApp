@@ -3,6 +3,8 @@ import React from 'react'
 import {BrowserRouter} from 'react-router-dom'
 import App from './App.jsx'
 import '@/common/css/reset.scss'
+let isDev = process.env.NODE_ENV;
+console.log('isDev:',isDev);
 
 ReactDOM.render(
   <BrowserRouter>

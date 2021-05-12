@@ -9,15 +9,15 @@ class HelloWorld extends React.Component{
     console.log('this:',this);
     console.log(Date.now());
   }
-  handleC(){
-    console.log(this);
+  handleC(msg,event){
+    console.log(this,msg,event);
   }
   render(){
     return (
       <div>
         <p>HelloWorld</p>
         <button onClick={this.handleClick}>click me</button>
-        <button onClick={this.handleC}>111</button>
+        <button onClick={this.handleC.bind(this,'msg')}>111</button>
       </div>
     )
   }
