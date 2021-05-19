@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cross-env NODE_ENV=development webpack serve --config webpack.config.development.js",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.production.js"
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.production.js",
+    "server":"node ./server/app.js"
   },
   "keywords": [],
   "author": "",
@@ -23,15 +24,17 @@
     "mini-css-extract-plugin": "^1.6.0",
     "node-sass": "^5.0.0",
     "react-addons-perf": "^15.4.2",
+    "redux-devtools": "^3.7.0",
     "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",
-    "terser-webpack-plugin": "^5.1.1",
     "webpack": "^5.36.2",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
+    "koa": "^2.13.1",
+    "koa-router": "^10.0.0",
     "react": "^17.0.2",
     "react-addons-pure-render-mixin": "^15.6.3",
     "react-dom": "^17.0.2",
