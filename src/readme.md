@@ -6,4 +6,5 @@
 
   Immutable.js
 
+  localStorage.setItem() 在ios safari无痕模式下 直接使用会报错。
     

@@ -1,38 +1,12 @@
 import React from 'react';
 import {Switch,Route} from 'react-router-dom';
-import HelloWorld from '@/components/HelloWorld';
-import MyComponent from '@/components/MyComponent';
-import LifeCycle from '@/components/LifeCycle';
-import Counter from '@/components/Counter';
 import routes from '@/router';
-import {connect} from 'react-redux';
+import './common/css/iconfont.scss';
 
-function App(props){
-  console.log('app-props:',props);
-  const [player,setPlayer] = React.useState({firstName:"kyrie",lastName:"irving"})
-  React.useEffect(() => {
-    fetch("/api/player")
-    .then(response => response.json())
-    .then(response => {
-      console.log('response:',response);
-    })
-  },[]);
-  function changePlayer(){
-    setPlayer({
-      firstName:"lebron",
-      lastName:"james"
-    })
-  }
-  let [counter,setCounter] = React.useState(0)
-  function handleClick(){
-    setCounter(counter+1);
-  }
+function App(){
   return (
     <div>
-      <HelloWorld/>
-      <MyComponent player={player} changePlayer={changePlayer}></MyComponent>
-      <LifeCycle/>
-      <Counter counter={counter}/><button onClick={handleClick}>click</button>
+      <i className="iconfont icon-user"></i>
       <Switch>
         {routes.map((route,i) => {
           return <Route path={route.path} key={'route-'+i}><route.component/></Route>
@@ -41,13 +15,6 @@ function App(props){
     </div>
   )
 }
-const mapStateToProps = (state) => {
-  return {
-    counter:state
-  }
-}
 
-
-App = connect(mapStateToProps)(App);
 
 export default App;
