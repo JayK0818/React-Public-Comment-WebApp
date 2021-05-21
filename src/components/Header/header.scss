@@ -1,0 +1,40 @@
+.header-container{
+  height:50px;
+  padding:0 5px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background-color:#e81f3b;
+  color:#ffffff;
+  .input-wrapper{
+    display:flex;
+    flex:1;
+    min-width:0;
+    padding-left:8px;
+    background-color:#fff;
+    border-radius:15px;
+    color:#b8b8b8;
+    align-items:center;
+    overflow:hidden;
+  }
+  .search-input{
+    outline:none;
+    border:none;
+    flex:1;
+    height:30px;
+    text-indent:8px;
+    color:rgba(0,0,0,.65);
+  }
+  .city-content{
+    padding-right:10px;
+    .current-city{
+      padding-right:2px;
+    }
+  }
+  .user-info{
+    padding-left:10px;
+    .icon-user{
+      font-size:20px;
+    }
+  }
+}
