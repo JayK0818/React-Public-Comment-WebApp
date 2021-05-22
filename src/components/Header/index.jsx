@@ -3,6 +3,7 @@ import './header.scss';
 import '../../common/css/iconfont.scss';
 
 function Header(props){
+  console.log('header-render');
   return (
     <div className="header-container">
       <div className="city-content">

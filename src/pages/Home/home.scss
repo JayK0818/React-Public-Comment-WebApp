@@ -1,0 +1,26 @@
+.swiper-container{
+  height:200px;
+  background-color:#fff;
+}
+.swiper-pagination{
+  position:absolute;
+  left:0;right:0;
+  bottom:10px;
+  height:10px;
+  text-align:center;
+}
+.swiper-pagination-bullet{
+  display:inline-block;
+  margin:0 5px;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:#ccc;
+}
+.swiper-pagination-bullet-active{
+  background-color:#e81f3b;
+}
+.swiper-slide{
+  display:flex;
+  flex-wrap:wrap;
+}
